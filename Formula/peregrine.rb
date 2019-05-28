@@ -4,15 +4,15 @@
 class Peregrine < Formula
   desc "Peregrine is a router solution for iOS Application module programs."
   homepage "https://github.com/BinaryParadise/Peregrine"
-  url "https://github.com/BinaryParadise/Peregrine/releases/download/0.1.0/rakellvm-9.0.2.tar.gz"
   version "0.1.0"
-  sha256 "6ffea5d8275a33717f9aac6fb7ebabaa327b5141ce04ddb5f2da186786591da7"
+  url "https://github.com/BinaryParadise/Peregrine/releases/download/0.1.0/rakellvm-#{version}-x86_64-darwin.tar.gz"
+  sha256 "28cdbf705050e9bfdd211f44a0da2782b2a2540a40b290b35c2fdd9b7a52d679"
   # depends_on "cmake" => :build
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
-    # system "cmake", ".", *std_cmake_args
-    bin.install 'rakellvm'
+    clang_version = '9.0.0'
+
+    prefix.install "bin","lib","include","libexec","share"
   end
 
   test do
