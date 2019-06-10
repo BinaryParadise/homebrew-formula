@@ -4,15 +4,19 @@
 class Peregrine < Formula
   desc "Peregrine is a router solution for iOS Application module programs."
   homepage "https://github.com/BinaryParadise/Peregrine"
-  version "0.1.2"
+  version "0.2.1"
   url "https://github.com/BinaryParadise/Peregrine/releases/download/#{version}/rakellvm-#{version}-x86_64-darwin.tar.gz"
-  sha256 "28cdbf705050e9bfdd211f44a0da2782b2a2540a40b290b35c2fdd9b7a52d679"
+  sha256 "ae980ed8a48a1094f8361d44d2d4e13740c5620a108f521b2934ab980a994cf3"
   # depends_on "cmake" => :build
 
   def install
     clang_version = '9.0.0'
 
-    prefix.install "bin","lib","include","libexec","share"
+    bin.install Dir["bin/*"]
+    lib.install Dir["lib/*"]
+    include.install Dir["include/*"]
+    libexec.install Dir["libexec/*"]
+    share.install Dir["share"]
   end
 
   test do
