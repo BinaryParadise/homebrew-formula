@@ -6,7 +6,7 @@ class Peregrine < Formula
   homepage "https://github.com/BinaryParadise/Peregrine"
   version "0.3.1"
   url "https://github.com/BinaryParadise/Peregrine/releases/download/#{version}/rakellvm-#{version}-x86_64-darwin.tar.gz"
-  sha256 "56453ab8e3fc014e03392a3a933396f1b309af487f0a2602bbd35dc91afd8d1c"
+  sha256 "de50845771b05151bd318127dcb501cef4898ba7ab4701a782d7cca515c6fec8"
   # depends_on "cmake" => :build
 
   def install
