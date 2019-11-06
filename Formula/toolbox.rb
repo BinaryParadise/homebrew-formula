@@ -6,7 +6,7 @@ class Toolbox < Formula
   homepage "https://github.com/BinaryParadise/BPToolBox"
   version "0.1.2"
   url "#{homepage}/releases/download/#{version}/toolbox-#{version}-x86_64-darwin.tar.gz"
-  sha256 "37c9871209cd7d6ebd13a679564af084466ea60c2c15116eb54ca1d7d68b943e"
+  sha256 "323055e1dbea8d967b31e58e2b660d198a5e4dfc2ef3b3b99b55f89c8193d33f"
   # depends_on "cmake" => :build
 
   def install
