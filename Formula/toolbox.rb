@@ -5,8 +5,8 @@ class Toolbox < Formula
   desc "ToolBox have tools for iOS"
   homepage "https://github.com/BinaryParadise/BPToolBox"
   version "0.1.2"
-  url "#{homepage}/releases/download/#{version}/toolbox-#{version}-x86_64-darwin.tar.gz"
-  sha256 "323055e1dbea8d967b31e58e2b660d198a5e4dfc2ef3b3b99b55f89c8193d33f"
+  url "#{homepage}/releases/download/#{version}/toolbox-x86_64-darwin.tar.gz"
+  sha256 "716f40f3df74ef82dfa068f8d81bd66e9d082db876a5e88e6fc6c8908311749e"
   # depends_on "cmake" => :build
 
   def install
