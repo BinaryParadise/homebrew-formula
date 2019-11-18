@@ -9,6 +9,8 @@ class Toolbox < Formula
   sha256 "9148d012a7071e3de1a34bd0466d3ef99a89141210d23997ffcbb0a0e477c321"
   # depends_on "cmake" => :build
 
+  depends_on "imagemagick"
+
   def install
     bin.install 'toolbox'
     bin.install 'lib'
